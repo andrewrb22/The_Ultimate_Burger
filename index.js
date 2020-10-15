@@ -1,5 +1,5 @@
 const express = require("express");
-const mysql = require("mysql");
+
 const exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
