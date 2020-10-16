@@ -1,0 +1,71 @@
+body {
+    background-image: url("https://image.shutterstock.com/z/stock-vector-fastfood-hand-drawn-cartoon-doodles-illustration-fast-food-funny-objects-and-elements-poster-1716839482.jpg");
+    color: black;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 10rem !important;
+    padding: 10px !important;
+    font-family: 'Bangers', cursive;
+    
+  
+  }
+  
+  .orderBox{
+    margin-top: 10% !important;
+  }
+  
+  .row {
+    
+    background-color: rgb(221, 45, 39);
+    margin-bottom: 0% !important;
+    border: solid rgb(245, 195, 33);
+    margin-bottom: 10% !important;
+  }
+  
+  button{
+    font-size: 3rem !important;
+  }
+  
+  li {
+    padding: 2%;
+    margin: 2%;
+    background: #faebd7;
+    font-size: 3rem;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .col{
+    text-align: center;
+  }
+  
+  .create-form {
+    padding: 20px !important;
+    margin: 10px !important;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  #bb {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 4rem;
+  }
+  
+  
+  h2 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 6rem !important;
+  }
