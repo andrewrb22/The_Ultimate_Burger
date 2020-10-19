@@ -1,6 +1,6 @@
 <div class="orderBox row">
   <div class="col s12">
-    <h1>The Ultimate Burgers</h1>
+    <h1>The Ultimate Burger</h1>
     <form class="create-form">
       <h3><i class="far fa-clipboard fa-2x"> Order a burger</i></h3>
       <div class="form-group">
@@ -17,7 +17,15 @@
         <ul>
           {{#each burgers}}
           {{#unless devoured}}
-          {{> b/b-block devoured=true}}
+          <li>
+	{{burger_name}}
+
+	<button class="devoured-btn btn waves-effect green btn-large" type="submit" name="action" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		{{#if devoured}}DEVOUR!{{else}}ORDER AGAIN{{/if}}
+	</button>
+
+	<button class="delete-btn btn waves-effect red lighten-1 btn-large" type="submit" name="action" data-id="{{this.id}}">DELETE</button>
+</li>
           {{/unless}}
           {{/each}}
         </ul>
@@ -30,7 +38,15 @@
         <ul>
           {{#each burgers}}
           {{#if devoured}}
-          {{> b/b-block devoured=false}}
+          <li>
+	{{burger_name}}
+
+	<button class="devoured-btn btn waves-effect green btn-large" type="submit" name="action" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		{{#if devoured}}DEVOUR!{{else}}ORDER AGAIN{{/if}}
+	</button>
+
+	<button class="delete-btn btn waves-effect red lighten-1 btn-large" type="submit" name="action" data-id="{{this.id}}">DELETE</button>
+</li>
           {{/if}}
           {{/each}}
         </ul>
